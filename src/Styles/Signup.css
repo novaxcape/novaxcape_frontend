@@ -29,6 +29,9 @@
   overflow: hidden;
 
   border: 1px solid #d1d5db;
+  p{
+    display:none;
+  }
 }
 
 
@@ -141,7 +144,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
   padding: 11px;
   background: white;
   border: 1.5px solid #e0e0e0;
@@ -289,15 +292,74 @@
   font-weight: 600;
 }
 
+/* PASSWORD */
 
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: 100%;
+  padding-right: 50px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.eye-icon:hover {
+  color: #ff6b35;
+}
+
+/* FORGOT PASSWORD */
+
+.forgot-password-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.forgot-link {
+  text-decoration: none;
+  color: #ff6b35;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* GOOGLE BUTTON ICON */
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
 
 @media (max-width: 900px) {
   .signup-container {
     grid-template-columns: 1fr;
+
   }
 
   .left-panel {
     min-height: 350px;
+    /* display:none; */
   }
 
   .overlay {
@@ -317,6 +379,7 @@
   .right-panel {
     padding: 25px;
   }
+  
 
   .right-panel h2 {
     font-size: 2rem;
