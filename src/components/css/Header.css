@@ -38,8 +38,8 @@
 }
 
 .logoPinImage {
-  height: 80%;
-  width: 250px;
+  height: 34px;
+  width: auto;
   object-fit: contain;
   margin-right: 6px;
 }
