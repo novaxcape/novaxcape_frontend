@@ -1,36 +1,64 @@
-@import url('https://googleapis.com');
+/* @import url("https://googleapis.com"); */
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 48px;
+  padding: 10px 0;
+  width: 100%;
+  height: 90px;
+
   background: #ffffff;
   border-bottom: 2px solid #1e40af;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: center;
   z-index: 100;
-  font-family: 'Manrope', sans-serif;
+  /* font-family: "Manrope"; */
 }
-
+.headerBody {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  /* background: #000; */
+  justify-content: space-between;
+}
+.headerActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 .logoWrapper {
   display: flex;
   align-items: center;
-  font-size: 22px;
-  font-weight: 700;
+  width: 15%;
+  height: 100%;
+  /* background: gray; */
 }
 
 .logoPinImage {
+  height: 80%;
+  width: 250px;
   height: 34px;
   width: auto;
   object-fit: contain;
   margin-right: 6px;
 }
 
-
 .navLinks {
   display: flex;
   align-items: center;
   gap: 36px;
+  a {
+    font-family: manrope;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #271a13;
+  }
 }
 
 .navLink {
@@ -48,7 +76,7 @@
 }
 
 .navLink.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -56,17 +84,30 @@
   height: 2px;
   background-color: #1e3a8a;
 }
-
+.headerActions {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 24px; */
+}
 .signUpBtn {
   background: #f97316;
   color: #ffffff;
   border: none;
-  border-radius: 50px;
-  padding: 12px 28px;
+  border-radius: 40px;
+  /* padding: 12px 28px; */
   font-size: 15px;
+
+  padding: 10px 7.86px 15.73px 7.86px;
+
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  width: 164.5px;
+  height: 44px;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .signUpBtn:hover {

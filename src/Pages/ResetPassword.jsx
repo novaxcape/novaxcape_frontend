@@ -20,7 +20,7 @@ const ResetPassword = () => {
           <h2>Create new password</h2>
 
           <p className="reset-description">
-            Enter your new password twice below to reset a new password.<br />
+              5
             Your password must be different than previous used passwords.
           </p>
 
