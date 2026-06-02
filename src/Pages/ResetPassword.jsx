@@ -10,8 +10,6 @@ const ResetPassword = () => {
   return (
     <div className="login-wrapper">
       <div className="login-container">
-        
-
         <div className="login-panel">
           <Image />
         </div>
@@ -20,7 +18,8 @@ const ResetPassword = () => {
           <h2>Create new password</h2>
 
           <p className="reset-description">
-            Enter your new password twice below to reset a new password.<br />
+            Enter your new password twice below to reset a new password.
+            <br />
             Your password must be different than previous used passwords.
           </p>
 
