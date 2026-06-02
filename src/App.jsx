@@ -6,6 +6,9 @@ import VerifyOtp from "./Pages/VerifyOtp";
 import ResetPassword from "./Pages/ResetPassword";
 import Supportpage from "./Pages/Supportpage";
 
+import LandingPage from './Pages/LandingPage';
+import ProductDetails from './Pages/ProductDetails';
+
 function App() {
   return (
     <BrowserRouter>
