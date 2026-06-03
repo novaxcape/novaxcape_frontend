@@ -1,11 +1,15 @@
 import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./css/Header.css";
 
 const Header = () => {
+  // const location = useLocation();
+  // const isLandingPage = location.pathname === "/";
+  // const isProductPage = location.pathname.startsWith("/product");
+
   return (
     <div className="headerContainer">
       <div className="headerBody">
-        {" "}
         <div className="logoWrapper">
           <img
             src="/src/assets/logo.png"
@@ -14,25 +18,50 @@ const Header = () => {
           />
         </div>
         <div className="navLinks">
-          <a href="#home" className="navLink">
+          <NavLink
+            end
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+          >
             Home
-          </a>
-          <a href="#discover" className="navLink">
+          </NavLink>
+          <NavLink
+            to="/discover"
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+          >
             Discover
-          </a>
-          <a href="#centres" className="navLink">
+          </NavLink>
+          <NavLink
+            to="/centres"
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+          >
             For Centres
-          </a>
-          <a href="#about" className="navLink">
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+          >
             About us
-          </a>
-          <a href="#support" className="navLink">
+          </NavLink>
+          <NavLink
+            to="/support"
+            className={({ isActive }) =>
+              isActive ? "navLink active" : "navLink"
+            }
+          >
             Support
-          </a>
+          </NavLink>
         </div>
         <div className="headerActions">
-          <div className="profile-action-icon">👤</div>
-          <button className="signUpBtn">Sign Up</button>
+      <button className="signUpBtn">Sign Up</button>
         </div>
       </div>
     </div>
