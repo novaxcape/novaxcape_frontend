@@ -12,7 +12,7 @@ import LandingPage from "./Pages/LandingPage";
 import ProductDetails from "./Pages/ProductDetails";
 import Home from "./components/Home";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
