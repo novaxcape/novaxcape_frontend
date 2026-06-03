@@ -1,5 +1,5 @@
 import React from "react";
-import supportpageimg from "../Assets/supportpageimg.png";
+import supportpageimg from "../assets/supportpageimg.png";
 import "../components/css/Supportpageherocontent.css";
 const supportpageherocontent = () => {
   return (
