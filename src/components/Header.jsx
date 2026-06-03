@@ -12,7 +12,7 @@ const Header = () => {
       <div className="headerBody">
         <div className="logoWrapper">
           <img
-            src="/src/assets/logo.png"
+            src="/novaexcape/Group 8.png"
             alt="Logo Pin"
             className="logoPinImage"
           />
