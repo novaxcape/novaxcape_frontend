@@ -2,6 +2,10 @@ import "../components/css/Header.css";
 import { FaHeart, FaUser, FaBars } from "react-icons/fa";
 
 const Header = () => {
+  // const location = useLocation();
+  // const isLandingPage = location.pathname === "/";
+  // const isProductPage = location.pathname.startsWith("/product");
+
   return (
     <>
       <div className="header">

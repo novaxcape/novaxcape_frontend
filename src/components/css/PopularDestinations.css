@@ -1,10 +1,10 @@
-@import url('https://googleapis.com');
+/* @import url('https://googleapis.com'); */
 
 .destinationsSection {
   padding: 60px 48px;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background: #ffffff;
 }
 
@@ -40,6 +40,20 @@
   overflow: hidden;
   height: 340px;
   width: 100%;
+  cursor: pointer;
+  transform: translateY(0);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.destinationCard:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 22px 54px rgba(15, 23, 42, 0.18);
+  border-color: rgba(30, 58, 138, 0.22);
 }
 
 .cardDisplayImage {
@@ -47,6 +61,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.destinationCard:hover .cardDisplayImage {
+  transform: scale(1.08);
 }
 
 .cardTextOverlay {
@@ -56,7 +75,11 @@
   width: 100%;
   padding: 24px;
   box-sizing: border-box;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -89,7 +112,7 @@
   .destinationsGrid {
     gap: 20px;
   }
-  
+
   .destinationCard {
     height: 280px;
   }
@@ -99,7 +122,7 @@
   .destinationsSection {
     padding: 40px 24px;
   }
-  
+
   .sectionMainTitle {
     font-size: 26px;
   }
@@ -110,7 +133,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .destinationCard {
     height: 240px;
   }
