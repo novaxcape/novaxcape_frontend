@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="footer-subscribe-section">
           <h4 className="footer-column-heading">Subscribe</h4>
           <p className="footer-subscribe-text">
-            SignUp to be the first to know about exclusive deals,Special discount and newly added attractions
+            SignUp to be the first to know about exclusive deals,Special discount and newly added  <br />attractions
           </p>
           <form className="footer-subscribe-form" onSubmit={(e) => e.preventDefault()}>
             <input 
