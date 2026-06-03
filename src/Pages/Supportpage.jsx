@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Supportpageherocontent from "../components/supportpageherocontent";
+import Supportpageherocontent from "../components/Supportpageherocontent";
 import Supportpagesubherocontext from "../components/Supportpagesubherocontext";
 import { FaQ } from "react-icons/fa6";
 import FAQ from "../components/Faq";
