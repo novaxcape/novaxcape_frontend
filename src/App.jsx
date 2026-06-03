@@ -8,7 +8,6 @@ import Supportpage from "./Pages/Supportpage";
 import Discover from "./Pages/Discover";
 import Centres from "./Pages/Centres";
 import About from "./Pages/About";
-
 import LandingPage from "./Pages/LandingPage";
 import ProductDetails from "./Pages/ProductDetails";
 import Home from "./components/Home";
