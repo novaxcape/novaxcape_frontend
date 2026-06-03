@@ -50,15 +50,16 @@
   display: flex;
   align-items: center;
   gap: 36px;
-  a {
-    font-family: manrope;
-    font-weight: 500;
-    font-style: medium;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: #271a13;
-  }
+}
+
+.navLinks a {
+  font-family: manrope;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #271a13;
 }
 
 .navLink {
