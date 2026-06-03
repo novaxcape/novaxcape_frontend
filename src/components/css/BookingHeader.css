@@ -1,6 +1,4 @@
-@import url('https://googleapis.com');
-
-.navbar-header {
+.booking-navbar-header {
   width: 100%;
   background-color: #ffffff;
   border-bottom: 2px solid #3b5998; 
@@ -8,10 +6,10 @@
 }
 
 .navbar-inner-container {
-  max-width: 1400px;
+  max-width: 1200px;
   height: 80px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,28 +57,28 @@
 .navbar-actions-wrapper {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
-.navbar-signup-btn {
-  background-color: #ff6633;
-  color: #ffffff;
+.navbar-action-btn {
+  background: none;
   border: none;
-  border-radius: 24px;
-  padding: 12px 36px;
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  padding: 0;
+  color: #333333;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
 }
 
-.navbar-signup-btn:hover {
-  background-color: #e55c2e;
+.navbar-action-btn:hover {
+  color: #0060a3;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1240px) {
   .navbar-inner-container {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 }
 
