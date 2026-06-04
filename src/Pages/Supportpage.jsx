@@ -5,6 +5,7 @@ import Supportpagesubherocontext from "../components/Supportpagesubherocontext";
 import { FaQ } from "react-icons/fa6";
 import FAQ from "../components/Faq";
 import Call from "../components/Call";
+import Footer from "../components/Footer";
 
 const Supportpage = () => {
   return (
@@ -16,6 +17,7 @@ const Supportpage = () => {
 
         <FAQ />
         <Call />
+        <Footer />
       </section>
     </main>
   );
