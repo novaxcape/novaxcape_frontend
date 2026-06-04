@@ -36,11 +36,11 @@ const Hero = () => {
               <div className="verifiedPercent">100%</div>
               <div className="verifiedText">Verified</div>
             </div>
-            <img src="/src/assets/photo2.png" alt="Clear Water" className="gridImage" />
+            <img src="/src/assets/photo2.png" alt="Clear Water" className="Image" />
           </div>
 
           <div className="gridItem bottomLeftCell">
-            <img src="/src/assets/photo3.png" alt="House with Balloon" className="gridImage" />
+            <img src="/src/assets/photo3.png" alt="House with Balloon" className="Image" />
           </div>
 
           <div className="gridItem bottomRightCell">
