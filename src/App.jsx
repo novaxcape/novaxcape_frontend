@@ -11,6 +11,11 @@ import About from "./Pages/About";
 import LandingPage from "./Pages/LandingPage";
 import ProductDetails from "./Pages/ProductDetails";
 import Home from "./components/Home";
+import WishList from "./Pages/WishList";
+import PaymentOptionPage from "./Pages/PaymentOptionPage";
+import MyBookingsPage from "./Pages/MyBookingsPage";
+import PaymentConfirmationPage from "./Pages/PaymentConfirmationPage";
+import Dashboard from "./Pages/Dashboard";
 
 const App = () => {
   return (
@@ -28,6 +33,11 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<ProductDetails />} />
         <Route path="/" element={<LandingPage />} />
+        <Route path="/wishlist" element={<WishList />} />
+        <Route path="/payment" element={<PaymentOptionPage />} />
+        <Route path="MyBookings" element={<MyBookingsPage />} />
+        <Route path="PaymentConfirmation" element={<PaymentConfirmationPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );
