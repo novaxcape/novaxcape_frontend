@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   FiGrid,
   FiCalendar,
@@ -12,23 +13,27 @@ const Sidebar = () => {
     {
       icon: <FiGrid />,
       label: "Dashboard",
-      active: true,
+      path: "/dashboard",
     },
     {
       icon: <FiCalendar />,
       label: "Bookings",
+      path: "/dashboard/bookings",
     },
     {
       icon: <FiBarChart2 />,
       label: "Revenue Trend",
+      path: "/dashboard/revenue",
     },
     {
       icon: <FiSettings />,
       label: "Settings",
+      path: "/dashboard/settings",
     },
     {
       icon: <FiHelpCircle />,
       label: "Support",
+      path: "/dashboard/support",
     },
   ];
 
@@ -37,7 +42,11 @@ const Sidebar = () => {
       {/* Logo */}
       <div>
         <div className="logo-section">
-<img src="/novaxcape/logo.png" alt="Novaxcape Logo" className="logo" />
+          <img
+            src="/novaxcape/logo.png"
+            alt="Novaxcape Logo"
+            className="logo"
+          />
 
           <p>Admin Portal</p>
         </div>
@@ -45,18 +54,16 @@ const Sidebar = () => {
         {/* Navigation */}
         <nav className="sidebar-nav">
           {menuItems.map((item) => (
-            <div
+            <NavLink
               key={item.label}
-              className={`nav-item ${
-                item.active ? "active" : ""
-              }`}
+              to={item.path}
+              className={({ isActive }) =>
+                `nav-item ${isActive ? "active" : ""}`
+              }
             >
-              <span className="nav-icon">
-                {item.icon}
-              </span>
-
+              <span className="nav-icon">{item.icon}</span>
               <span>{item.label}</span>
-            </div>
+            </NavLink>
           ))}
         </nav>
       </div>
@@ -64,14 +71,12 @@ const Sidebar = () => {
       {/* Footer */}
       <div className="sidebar-footer">
         <div className="account-section">
-          <p className="account-title">
-            ACCOUNT
-          </p>
+          <p className="account-title">ACCOUNT</p>
 
-        <button className="logout-btn">
-  <FiLogOut />
-  <span>Exit Partner Portal</span>
-</button>
+          <button className="logout-btn">
+            <FiLogOut />
+            <span>Exit Partner Portal</span>
+          </button>
         </div>
       </div>
     </aside>

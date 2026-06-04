@@ -16,6 +16,9 @@ import PaymentOptionPage from "./Pages/PaymentOptionPage";
 import MyBookingsPage from "./Pages/MyBookingsPage";
 import PaymentConfirmationPage from "./Pages/PaymentConfirmationPage";
 import Dashboard from "./Pages/Dashboard";
+import SettingsPage from "./Pages/SettingPage";
+import RevenueTrendPage from "./Pages/RevenueTrendPage";
+import DashboardLayout from "./components/DashboardLayout";
 
 const App = () => {
   return (
@@ -36,11 +39,20 @@ const App = () => {
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/payment" element={<PaymentOptionPage />} />
         <Route path="MyBookings" element={<MyBookingsPage />} />
-        <Route path="PaymentConfirmation" element={<PaymentConfirmationPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="PaymentConfirmation"
+          element={<PaymentConfirmationPage />}
+        />
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="bookings" element={<MyBookingsPage />} />
+          <Route path="revenue" element={<RevenueTrendPage />} />
+          <Route path="settings" element={<SettingsPage />} />
+          <Route path="support" element={<Supportpage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
-export default App
+export default App;
