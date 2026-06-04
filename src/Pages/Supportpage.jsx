@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../Components/Header";
-import Supportpageherocontent from "../Components/supportpageherocontent";
-import Supportpagesubherocontext from "../Components/Supportpagesubherocontext";
+import Header from "../components/Header";
+import Supportpageherocontent from "../components/Supportpageherocontent";
+import Supportpagesubherocontext from "../components/Supportpagesubherocontext";
 import { FaQ } from "react-icons/fa6";
-import FAQ from "../Components/Faq";
+import FAQ from "../components/Faq";
 import Call from "../components/Call";
 
 const Supportpage = () => {

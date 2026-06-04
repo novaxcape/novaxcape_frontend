@@ -1,10 +1,10 @@
-@import url('https://googleapis.com');
+/* @import url('https://googleapis.com'); */
 
 .attractionsSection {
   padding: 60px 48px;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background: #ffffff;
 }
 
@@ -38,9 +38,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   width: 100%;
+  cursor: pointer;
 }
 
 .attractionCard {
+  cursor: pointer;
   background: #ffffff;
   border-radius: 20px;
   border: 1px solid #f0f0f0;
@@ -48,6 +50,20 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   display: flex;
   flex-direction: column;
+  opacity: 0.95;
+  transform: translateY(0);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.attractionCard:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  border-color: rgba(30, 58, 138, 0.18);
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
 }
 
 .cardImageWrapper {
@@ -62,6 +78,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.attractionCard:hover .cardDisplayImage {
+  transform: scale(1.06);
 }
 
 .trendingBadgeTag {
@@ -146,7 +167,7 @@
   .attractionsSection {
     padding: 40px 24px;
   }
-  
+
   .sectionMainTitle {
     font-size: 26px;
   }
@@ -157,7 +178,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .cardImageWrapper {
     height: 200px;
   }
