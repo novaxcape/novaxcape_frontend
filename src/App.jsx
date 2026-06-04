@@ -6,8 +6,9 @@ import VerifyOtp from "./Pages/VerifyOtp";
 import ResetPassword from "./Pages/ResetPassword";
 import Supportpage from "./Pages/Supportpage";
 
-import LandingPage from './Pages/LandingPage';
-import ProductDetails from './Pages/ProductDetails';
+import LandingPage from "./Pages/LandingPage";
+import ProductDetails from "./Pages/ProductDetails";
+import Aboutpage from "./Pages/Aboutpage";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/verify-otp" element={<VerifyOtp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/" element={<Supportpage />} />
+        <Route path="/supportpage" element={<Supportpage />} />
+        <Route path="/" element={<Aboutpage />} />
       </Routes>
     </BrowserRouter>
   );
