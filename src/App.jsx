@@ -12,6 +12,14 @@ import LandingPage from "./Pages/LandingPage";
 import ProductDetails from "./Pages/ProductDetails";
 import Discoverpage from "./Pages/Discoverpage";
 import Home from "./components/Home";
+import WishList from "./Pages/WishList";
+import PaymentOptionPage from "./Pages/PaymentOptionPage";
+import MyBookingsPage from "./Pages/MyBookingsPage";
+import PaymentConfirmationPage from "./Pages/PaymentConfirmationPage";
+import Dashboard from "./Pages/Dashboard";
+// import SettingsPage from "./Pages/SettingPage";
+import RevenueTrendPage from "./Pages/RevenueTrendPage";
+import DashboardLayout from "./components/DashboardLayout";
 
 import Aboutpage from "./Pages/Aboutpage";
 
@@ -33,11 +41,26 @@ const App = () =>  {
         <Route path="/product" element={<ProductDetails />} />
       
         <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/l" element={<LandingPage />} />
-        <Route path="/" element={<Discoverpage />} />
+
+        <Route path="/discoverpage" element={<Discoverpage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/wishlist" element={<WishList />} />
+        <Route path="/payment" element={<PaymentOptionPage />} />
+        <Route path="/my-bookings" element={<MyBookingsPage />} />
+        <Route
+          path="/payment-confirmation"
+          element={<PaymentConfirmationPage />}
+        />
+        <Route path="/dashboard" element={<DashboardLayout />}>
+
+          <Route path="bookings" element={<MyBookingsPage />} />
+          <Route path="revenue" element={<RevenueTrendPage />} />
+          {/* <Route path="settings" element={<SettingsPage />} /> */}
+          <Route path="support" element={<Supportpage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
-export default App
+export default App;

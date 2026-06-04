@@ -30,6 +30,7 @@ const Profile = () => {
         </div>
       </section>
 
+      {/* Segmented Navigation Tab Container Bar */}
       <div className="settings-tabs-wrapper">
         <nav className="settings-tabs-nav">
           <button type="button" className="tab-item active">Account Setting</button>
