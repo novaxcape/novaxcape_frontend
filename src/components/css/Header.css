@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+/* @import url("https://googleapis.com"); */
 
 .navbar-header {
   width: 100%;
@@ -15,24 +15,64 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
-}
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 90px;
 
+  background: #ffffff;
+  border-bottom: 2px solid #1e40af;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  /* font-family: "Manrope"; */
+}
+.headerBody {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  /* background: #000; */
+  justify-content: space-between;
+}
+.headerActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 .navbar-logo-wrapper {
   display: flex;
   align-items: center;
+  width: 15%;
+  height: 100%;
+  /* background: gray; */
 }
 
 .navbar-brand-logo {
+  height: 80%;
+  width: 250px;
   height: 32px; 
   width: auto;
   display: block;
 }
 
+.navLinks {
+
 .navbar-navigation-links {
   display: flex;
   align-items: center;
   gap: 32px;
+  a {
+    font-family: manrope;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #271a13;
+  }
 }
 
 .nav-item-link {
@@ -61,17 +101,39 @@
   align-items: center;
 }
 
-.navbar-signup-btn {
-  background-color: #ff6633;
+.navLink.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1e3a8a;
+}
+.headerActions {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 24px; */
+}
+.signUpBtn {
+  background: #f97316;
   color: #ffffff;
   border: none;
-  border-radius: 24px;
-  padding: 12px 36px;
-  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
+  border-radius: 40px;
+  /* padding: 12px 28px; */
+  font-size: 15px;
+
+  padding: 10px 7.86px 15.73px 7.86px;
+
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  width: 164.5px;
+  height: 44px;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .navbar-signup-btn:hover {

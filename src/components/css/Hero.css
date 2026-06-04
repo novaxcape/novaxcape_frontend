@@ -7,7 +7,7 @@
   min-height: calc(100vh - 80px);
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   background: #ffffff;
   gap: 60px;
 }

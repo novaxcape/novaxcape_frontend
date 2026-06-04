@@ -1,27 +1,39 @@
-import React from 'react';
-import './css/Header.css';
+import React from "react";
+import "./css/Header.css";
 
 const Header = () => {
   return (
-    <header className="navbar-header">
-      <div className="navbar-inner-container">
-        
-        <div className="navbar-logo-wrapper">
-          <img src="/src/assets/logo.png" alt="novaxcape" className="navbar-brand-logo" />
+    <div className="headerContainer">
+      <div className="headerBody">
+        {" "}
+        <div className="logoWrapper">
+          <img
+            src="/src/assets/logo.png"
+            alt="Logo Pin"
+            className="logoPinImage"
+          />
         </div>
-
-        <nav className="navbar-navigation-links">
-          <a href="#home" className="nav-item-link active">Home</a>
-          <a href="#discover" className="nav-item-link">Discover</a>
-          <a href="#centres" className="nav-item-link">For Centres</a>
-          <a href="#about" className="nav-item-link">About us</a>
-          <a href="#support" className="nav-item-link">Support</a>
-        </nav>
-
-        <div className="navbar-actions-wrapper">
-          <button className="navbar-signup-btn">Sign Up</button>
+        <div className="navLinks">
+          <a href="#home" className="navLink">
+            Home
+          </a>
+          <a href="#discover" className="navLink">
+            Discover
+          </a>
+          <a href="#centres" className="navLink">
+            For Centres
+          </a>
+          <a href="#about" className="navLink">
+            About us
+          </a>
+          <a href="#support" className="navLink">
+            Support
+          </a>
         </div>
-
+        <div className="headerActions">
+          <div className="profile-action-icon">👤</div>
+          <button className="signUpBtn">Sign Up</button>
+        </div>
       </div>
     </header>
   );
