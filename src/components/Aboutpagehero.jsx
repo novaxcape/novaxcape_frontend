@@ -7,7 +7,7 @@ const Aboutpagehero = () => {
       <div className="overlay"></div>
 
       <div className="aboutContent">
-        <h1>About Us</h1>
+        <h2>About Us</h2>
 
         <p>
           We are Novaxcape—a platform dedicated to simplifying the discovery and
@@ -19,7 +19,7 @@ const Aboutpagehero = () => {
       <div className="sliderDots">
         <span className="activeDot"></span>
         <span></span>
-        <span></span>
+        <span className="sliderDot"></span>
       </div>
     </section>
   );

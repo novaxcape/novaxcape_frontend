@@ -5,7 +5,7 @@
   background-image: url("https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=2070");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 
   position: relative;
 
@@ -18,7 +18,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  /* background: rgba(0, 0, 0, 0.55); */
 }
 
 .aboutContent {

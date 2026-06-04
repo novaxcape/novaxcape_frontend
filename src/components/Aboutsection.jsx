@@ -11,7 +11,7 @@ const Aboutsection = () => {
       <div className="about-container">
         <div className="about-images">
           <div className="left-column">
-            <img src={img1} alt="Volunteer" className="small-image" />
+            <img src={img1} alt="Volunteer" className="medium-image" />
             <img src={img2} alt="Volunteer" className="small-image" />
           </div>
 
