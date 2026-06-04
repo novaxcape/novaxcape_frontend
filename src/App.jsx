@@ -16,7 +16,7 @@ import PaymentOptionPage from "./Pages/PaymentOptionPage";
 import MyBookingsPage from "./Pages/MyBookingsPage";
 import PaymentConfirmationPage from "./Pages/PaymentConfirmationPage";
 import Dashboard from "./Pages/Dashboard";
-import SettingsPage from "./Pages/SettingPage";
+// import SettingsPage from "./Pages/SettingPage";
 import RevenueTrendPage from "./Pages/RevenueTrendPage";
 import DashboardLayout from "./components/DashboardLayout";
 
@@ -47,7 +47,7 @@ const App = () => {
           <Route index element={<Dashboard />} />
           <Route path="bookings" element={<MyBookingsPage />} />
           <Route path="revenue" element={<RevenueTrendPage />} />
-          <Route path="settings" element={<SettingsPage />} />
+          {/* <Route path="settings" element={<SettingsPage />} /> */}
           <Route path="support" element={<Supportpage />} />
         </Route>
       </Routes>
