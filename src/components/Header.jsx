@@ -14,7 +14,7 @@ const Header = () => {
           {/* LOGO */}
           <div className="logo">
             <img
-              src="/src/assets/logo.png"
+              src="/novaxcape/Group 8.png"
               alt="Novaxcape"
               className="header-logo-img"
             />

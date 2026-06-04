@@ -22,7 +22,7 @@ const FeaturedAttractions = () => {
             <div className="card-meta">
               <div className="rating-container">
                 <div className="stars-wrapper">
-                  <FaStar className="star-icon filled" />
+                  <FaStar className="star-icon filled" />npm ru
                   <FaStar className="star-icon filled" />
                   <FaStar className="star-icon filled" />
                   <FaStar className="star-icon filled" />
