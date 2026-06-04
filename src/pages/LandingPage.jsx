@@ -6,7 +6,6 @@ import Attractions from '../components/Attractions'
 import PopularDestinations from '../components/PopularDestinations'
 import FeaturedAttractions from '../components/FeaturedAttractions'
 import Footer from '../components/Footer'
-import HowItWorks from '../components/HowItWorks'
 const LandingPage = () => {
   return (
     <div>
@@ -16,7 +15,6 @@ const LandingPage = () => {
       <Attractions/>
       <PopularDestinations/>
       <FeaturedAttractions/>
-      <HowItWorks/>
       <Footer/>
     </div>
   )
