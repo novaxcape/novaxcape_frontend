@@ -10,6 +10,7 @@ import Centres from "./Pages/Centres";
 import About from "./Pages/About";
 import LandingPage from "./Pages/LandingPage";
 import ProductDetails from "./Pages/ProductDetails";
+import Discoverpage from "./Pages/Discoverpage";
 import Home from "./components/Home";
 import WishList from "./Pages/WishList";
 import PaymentOptionPage from "./Pages/PaymentOptionPage";
@@ -20,7 +21,10 @@ import Dashboard from "./Pages/Dashboard";
 import RevenueTrendPage from "./Pages/RevenueTrendPage";
 import DashboardLayout from "./components/DashboardLayout";
 
-const App = () => {
+import Aboutpage from "./Pages/Aboutpage";
+
+const App = () =>  {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -33,18 +37,22 @@ const App = () => {
         <Route path="/support" element={<Supportpage />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/centres" element={<Centres />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Aboutpage />} />
         <Route path="/product" element={<ProductDetails />} />
+      
+        <Route path="/product/:id" element={<ProductDetails />} />
+
+        <Route path="/discoverpage" element={<Discoverpage />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/payment" element={<PaymentOptionPage />} />
-        <Route path="MyBookings" element={<MyBookingsPage />} />
+        <Route path="/my-bookings" element={<MyBookingsPage />} />
         <Route
-          path="PaymentConfirmation"
+          path="/payment-confirmation"
           element={<PaymentConfirmationPage />}
         />
         <Route path="/dashboard" element={<DashboardLayout />}>
-          <Route index element={<Dashboard />} />
+
           <Route path="bookings" element={<MyBookingsPage />} />
           <Route path="revenue" element={<RevenueTrendPage />} />
           {/* <Route path="settings" element={<SettingsPage />} /> */}
