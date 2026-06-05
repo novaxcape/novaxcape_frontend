@@ -1,8 +1,5 @@
-import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import "./css/Header.css";
-import { FaHeart } from "react-icons/fa";
-import { FaBars, FaUser } from "react-icons/fa6";
+import "../components/css/Header.css";
+import { FaHeart, FaUser, FaBars } from "react-icons/fa";
 
 const Header = () => {
   // const location = useLocation();
@@ -17,7 +14,7 @@ const Header = () => {
           {/* LOGO */}
           <div className="logo">
             <img
-              src="/src/assets/logo.png"
+              src="/novaxcape/logo.png"
               alt="Novaxcape"
               className="header-logo-img"
             />
