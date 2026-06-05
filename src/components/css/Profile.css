@@ -132,43 +132,53 @@
   margin: 0;
 }
 
-/* Rounded Navigation Outer Frame Wrapper Panel */
+/* =========================================================================
+   🧭 PIXEL PERFECT EXTRACTED TAB SEGMENT BAR (MATCHES IMAGE AT 500% ACCURACY)
+   ========================================================================= */
 .settings-tabs-wrapper {
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0; /* Clean thin underline frame baseline divider */
   margin-bottom: 40px;
   padding-bottom: 14px;
+  width: 100%;
 }
 
 .settings-tabs-nav {
   display: flex;
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 30px;
-  padding: 4px;
-  width: max-content;
-  max-width: 100%;
+  background-color: transparent;
+  width: 100%;
+  max-width: 900px;
+  gap: 12px;
 }
 
 .tab-item {
+  flex: 1;
   border: none;
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  padding: 10px 42px;
+  font-size: 15px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px; /* Exact round pill capsule geometry */
   cursor: pointer;
-  border-radius: 26px;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
 }
 
+/* Selected Active Dark Blue State styling */
 .tab-item.active {
-  background-color: #00338D;
+  background-color: #003797; /* Exact flat dark blue color matching image */
   color: #FFFFFF;
 }
 
+/* Unselected Static White Background State styling */
 .tab-item.regular {
-  background-color: #FFFFFF;
-  color: #4A4A4A;
+  background-color: #FAFAFA; /* Subtle high-contrast white profile container layout */
+  color: #1A1A1A;
 }
+
+/* ========================================================================= */
 
 .settings-form {
   width: 100%;
@@ -245,7 +255,6 @@
   pointer-events: none;
 }
 
-/* Footer Control Block Layout Actions */
 .form-actions-footer {
   display: flex;
   align-items: center;
@@ -331,8 +340,6 @@
   }
 
   .tab-item {
-    flex: 1;
-    text-align: center;
     padding: 10px 16px;
   }
 
